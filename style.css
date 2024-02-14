@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #212025;
+  /* background-color: purple; */
+  /* height: 100vh; */
+}
+.background {
+  /* width: 100%; */
+  max-width: 1200px;
+  height: 600px;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+.triangulo {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+}
+
+.triangulo1 {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(to left, #0ea1ea, #1e67c7);
+  right: 100px;
+  top: 180px;
+  animation: t1 9s ease infinite;
+  -webkit-animation: t1 9s ease infinite;
+}
+.triangulo2 {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(to left, #ee8105, #c7371e);
+  top: 400px;
+  animation: t1 7s ease infinite;
+  -webkit-animation: t2 7s ease infinite;
+}
+.triangulo3 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to left, #fbc2eb, #a6c1ee);
+  left: 150px;
+  top: 100px;
+  animation: t1 6s ease infinite;
+  -webkit-animation: t3 6s ease infinite;
+}
+
+@keyframes t1 {
+  0% {
+    transform: rotate(45deg) translate(0px);
+  }
+  50% {
+    transform: rotate(45deg) translate(20px);
+  }
+  100% {
+    transform: rotate(45deg) translate(0px);
+  }
+}
+@keyframes t2 {
+  0% {
+    transform: rotate(65deg) translate(0px);
+  }
+  50% {
+    transform: rotate(65deg) translate(20px);
+  }
+  100% {
+    transform: rotate(65deg) translate(0px);
+  }
+}
+
+@keyframes t3 {
+  0% {
+    transform: rotate(65deg) translate(0px);
+  }
+  50% {
+    transform: rotate(65deg) translate(20px);
+  }
+  100% {
+    transform: rotate(65deg) translate(0px);
+  }
+}
+
+.contenedor__cards {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  /* min-height: 750px; */
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-columns: repeat(auto-fit, 300px);
+  gap: 1em;
+  justify-content: center;
+  align-content: center;
+}
+
+.card {
+  padding: 1.5em 1em;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  /*text-align: center;*/
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: solid 1px rgba(255, 255, 255, 0.5);
+  border-top: solid 1px rgba(255, 255, 255, 0.5);
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  backdrop-filter: blur(5px);
+}
+
+.card__img {
+  margin-bottom: 1em;
+}
+
+.card__img img {
+  width: 100%;
+  /* max-width: 300px; */
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.card__titulo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.card__paragraph {
+  color: white;
+  line-height: 1.5;
+  margin: 1em 0;
+}
+
+.card__linea {
+  margin: 1em 0;
+  border: none;
+  height: 0.5px;
+  background-color: #41414138;
+}
+
+.card__nombre {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card__footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
