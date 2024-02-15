@@ -107,6 +107,7 @@ body {
 }
 
 .contenedor__cards {
+  /* background-color: white; */
   padding: 1em 0;
   width: 100%;
   max-width: 1200px;
@@ -181,4 +182,11 @@ body {
   color: white;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: 1440px) {
+  .contenedor__cards {
+    column-gap: 1em;
+    row-gap: 0;
+  }
 }
