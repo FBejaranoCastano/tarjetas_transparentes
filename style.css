@@ -54,8 +54,18 @@ body {
 .triangulo3 {
   width: 250px;
   height: 250px;
-  background: linear-gradient(to left, #fbc2eb, #a6c1ee);
+  background: linear-gradient(to left, #f5576c, #f093fb);
   left: 150px;
+  top: 100px;
+  animation: t1 6s ease infinite;
+  -webkit-animation: t3 6s ease infinite;
+}
+
+.triangulo4 {
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(to left, #f5576c, #f093fb);
+  right: 400px;
   top: 100px;
   animation: t1 6s ease infinite;
   -webkit-animation: t3 6s ease infinite;
@@ -105,13 +115,14 @@ body {
 
   display: grid;
   grid-template-rows: repeat(3, max-content);
-  grid-template-columns: repeat(auto-fit, 300px);
+  grid-template-columns: repeat(auto-fit, 285px);
   gap: 1em;
   justify-content: center;
   align-content: center;
 }
 
 .card {
+  margin: 1em 0;
   padding: 1.5em 1em;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
   /*text-align: center;*/
